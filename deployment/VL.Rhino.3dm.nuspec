@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Rhino.3dm</id>
-    <version>0.1.23</version>
+    <version>0.1.24</version>
     <title>VL.Rhino.3dm</title>
     <authors>Wolf Moritz Cramer</authors>
     <owners>Wolf Moritz Cramer</owners>
-    <projectUrl>https://github.com/wolfmoritzcramer/VL.Rhino.3dm</projectUrl>
+    <projectUrl>https://wolfmoritzcramer.de/vl-rhino-3dm/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>VL Library to access Rhino *.3dm Files</summary>
     <description>VL Library to access Rhino *.3dm Files</description>
