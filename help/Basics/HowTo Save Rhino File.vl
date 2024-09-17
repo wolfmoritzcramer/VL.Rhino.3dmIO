@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="AGwUbFTd056Pc6N7O5Te1V" LanguageVersion="2024.6.6" Version="0.128">
+  <Patch Id="RrfT02ngQgVQRfKQNnCPP3">
+    <Canvas Id="ALwb6A8IF0dP6TpR1BrxOc" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="OfQ6Zfa8coPQbG3sck7boI">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Ou4epLwA5SnNu1dvHUzfmh">
+        <Canvas Id="DQrKbv8AOWZPRfekHgSelC" CanvasType="Group">
+          <Node Bounds="6,-162,83,19" Id="OoFrFokImD5Ngp3Uj99fie">
+            <p:NodeReference LastCategoryFullName="Graphics.Rhino.3dm" LastDependency="VL.Rhino.3dm.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ToRhinoObject" />
+              <PinReference Kind="InputPin" Name="Mesh" />
+            </p:NodeReference>
+            <Pin Id="NqS3F1RHV5vLz0mm5PMHbR" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="OjpfxqEykW7NNgtCy6YfIX" Name="Mesh" Kind="InputPin" />
+            <Pin Id="CZ0weg7hKIIMlyiaF2671e" Name="Output" Kind="OutputPin" />
+            <Pin Id="QLhrtOx4iBsLAXZJI90hsp" Name="Success" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="6,-197,85,19" Id="JwtjoLSoeHZPixpU1RlgUs">
+            <p:NodeReference LastCategoryFullName="Stride.Models.Meshes" LastDependency="VL.Stride.Runtime.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessNode" Name="TeapotMesh" />
+            </p:NodeReference>
+            <Pin Id="QxywPrbcZCyLLYZHnUqxZI" Name="Size" Kind="InputPin" />
+            <Pin Id="IqkIBQaFiAHPaulUad6WVE" Name="Tessellation" Kind="InputPin" />
+            <Pin Id="Csc4H8FlEgONJQ0xz2UNO8" Name="Scale" Kind="InputPin" DefaultValue="1.5, 1, 1" />
+            <Pin Id="QIbTGb6HV5WMNa9nUFTYGm" Name="Uv Scale" Kind="InputPin" IsHidden="true" />
+            <Pin Id="BYV9SNYfmLcQXo9JjYdpHN" Name="Local Offset" Kind="InputPin" />
+            <Pin Id="ACsUEJUTGwCQBxhNMlkEoy" Name="Number Of Texture Coordinates" Kind="InputPin" />
+            <Pin Id="MbsBEA8pQZDM4UAhOsavFD" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="6,163,69,19" Id="RLaZPaBIqkdLTteuVLaObT">
+            <p:NodeReference LastCategoryFullName="Graphics.Rhino.3dm" LastDependency="VL.Rhino.3dm.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="RhinoWriter" />
+            </p:NodeReference>
+            <Pin Id="HCL9oGOsT4nNgabMeKNrwh" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Kf3Z2AUBHQZNM5O9vien3C" Name="GeometryBase" Kind="InputPin" />
+            <Pin Id="AI2z34LsiqCLEoCMjttqtZ" Name="File Path" Kind="InputPin" />
+            <Pin Id="St81BWiV5YfMb5vMaAfgkK" Name="Error Log" Kind="OutputPin" />
+            <Pin Id="R0INzEJcSjcMXc5d3kbWAO" Name="Write" Kind="InputPin" />
+            <Pin Id="LvPxLqtP2trQS8lE4JJIXz" Name="Success" Kind="OutputPin" />
+          </Node>
+          <Pad Id="AapaxT0uxPzNAMrM23U4nb" Comment="File Path" Bounds="39,90,277,15" ShowValueBox="true" isIOBox="true" Value="..\Test.3dm">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="EpUqjMyoULwNFWY9wNCo1Y" Comment="Write" Bounds="72,133,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="P5jWGqdSsMqO0tuPWFEAEB" Comment="Error Log" Bounds="8,245,164,33" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="C9cl5RmgdkdPdpcnz4bcYh" Comment="Success" Bounds="72,199,35,35" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="48,-58,83,19" Id="K7AAUQSGU1vOjtDDK2f7kb">
+            <p:NodeReference LastCategoryFullName="Graphics.Rhino.3dm" LastDependency="VL.Rhino.3dm.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ToRhinoObject" />
+              <PinReference Kind="InputPin" Name="Point" />
+              <PinReference Kind="OutputPin" Name="Success" />
+            </p:NodeReference>
+            <Pin Id="GD5vQGWIgYeNally6tVGSG" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="ACI8y2AKgeTNYWD4wnyz84" Name="Point" Kind="InputPin" />
+            <Pin Id="LyRbvP642VaLt8yMZhaQg8" Name="Output" Kind="OutputPin" />
+            <Pin Id="HM7AQ8JHSI4NzmDq4m5N6D" Name="Success" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="6,48,39,19" Id="E4CrItgznWRLeA7g6Acffv">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="Cons" />
+            </p:NodeReference>
+            <Pin Id="HvZEpVgfQaZOrBekZEc8A0" Name="Input" Kind="InputPin" />
+            <Pin Id="QG2DwRQupPSPmSGcXmkKS6" Name="Input 2" Kind="InputPin" />
+            <Pin Id="PPEhXqLYLuBNmq1I19B0DF" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="ElOYWjOVIgMLBIjByoESGd" Comment="Point" Bounds="50,-101,35,43" ShowValueBox="true" isIOBox="true" Value="0, 3.22, 0">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector3" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="48,11,82,19" Id="EhQEWyyO9J5NEk0RSEDRTy">
+            <p:NodeReference LastCategoryFullName="Graphics.Rhino.3dm" LastDependency="VL.Rhino.3dm.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="AddUserString" />
+            </p:NodeReference>
+            <Pin Id="UVJsDZG1SXPN5ipYLSmONS" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="ShvO9NDPrA8PpGmZUKaevk" Name="GeometryBase" Kind="InputPin" />
+            <Pin Id="MU58QzxHKK9O4QvFgu1hoo" Name="Key" Kind="InputPin" DefaultValue="Schackas" />
+            <Pin Id="PyvYt0eSZPwPcij0ZGmVZ6" Name="Value" Kind="InputPin" DefaultValue="12" />
+            <Pin Id="Pjl8J3fGEIpP3WpeZBbDet" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Julf3rnTgtmNtejUyWHB7n" Comment="Key" Bounds="88,-15,49,15" ShowValueBox="true" isIOBox="true" Value="Test">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="OG7B2tCdKnWP0mF2aVmnI6" Comment="Scale" Bounds="48,-243,35,43" ShowValueBox="true" isIOBox="true" Value="1, 1, 1">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector3" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Krf7cmEY0JQPIV0oQw9dvy" Comment="" Bounds="193,-2,35,15" ShowValueBox="true" isIOBox="true" Value="12">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+        </Canvas>
+        <Patch Id="Gh5LZHA8lXkLglMUXM1z2m" Name="Create" />
+        <Patch Id="J7Zb8Wk7a4iPT0eqYTmRPr" Name="Update" />
+        <ProcessDefinition Id="F8Q0iXoHqf0NGGikcANBkl">
+          <Fragment Id="JUZN7WqGSY9MVsE9XxBf4g" Patch="Gh5LZHA8lXkLglMUXM1z2m" Enabled="true" />
+          <Fragment Id="PWEPORkQ5X0Mj1JQczaSpw" Patch="J7Zb8Wk7a4iPT0eqYTmRPr" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="Vxx5aZUpdtSPuZJrLbvWzB" Ids="AapaxT0uxPzNAMrM23U4nb,AI2z34LsiqCLEoCMjttqtZ" />
+        <Link Id="GmkuDAp209UN2xr20V8L2v" Ids="EpUqjMyoULwNFWY9wNCo1Y,R0INzEJcSjcMXc5d3kbWAO" />
+        <Link Id="AtIwQMK7Q9BLQWQXFfuhCj" Ids="St81BWiV5YfMb5vMaAfgkK,P5jWGqdSsMqO0tuPWFEAEB" />
+        <Link Id="I8VnPAy7UWWLMaSl5EiGm9" Ids="LvPxLqtP2trQS8lE4JJIXz,C9cl5RmgdkdPdpcnz4bcYh" />
+        <Link Id="U9rFgjO1cShNGewelmIJQb" Ids="CZ0weg7hKIIMlyiaF2671e,HvZEpVgfQaZOrBekZEc8A0" />
+        <Link Id="IjRVmLIYiirNMmbdgU6pf2" Ids="ElOYWjOVIgMLBIjByoESGd,ACI8y2AKgeTNYWD4wnyz84" />
+        <Link Id="KzHkOu669DNNgHbhAVtSun" Ids="PPEhXqLYLuBNmq1I19B0DF,Kf3Z2AUBHQZNM5O9vien3C" />
+        <Link Id="Pxba3WzzfyYNEtixs0GOQa" Ids="LyRbvP642VaLt8yMZhaQg8,ShvO9NDPrA8PpGmZUKaevk" />
+        <Link Id="PBNgbWOklg6QX50pbNte1s" Ids="Pjl8J3fGEIpP3WpeZBbDet,QG2DwRQupPSPmSGcXmkKS6" />
+        <Link Id="Ud4OiLHunCKNy9vOGDI68V" Ids="Julf3rnTgtmNtejUyWHB7n,MU58QzxHKK9O4QvFgu1hoo" />
+        <Link Id="C5nnyZ7IanbOGlUSRVe9Dx" Ids="OG7B2tCdKnWP0mF2aVmnI6,Csc4H8FlEgONJQ0xz2UNO8" />
+        <Link Id="PUmr5MZzSTuNRbIK0mWtud" Ids="MbsBEA8pQZDM4UAhOsavFD,OjpfxqEykW7NNgtCy6YfIX" />
+        <Link Id="CqK5RSqInLpPtEwdP41Ndt" Ids="Krf7cmEY0JQPIV0oQw9dvy,PyvYt0eSZPwPcij0ZGmVZ6" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="DFsJGkpHRApLmxiTM2iyjX" Location="VL.CoreLib" Version="2024.6.6" />
+  <NugetDependency Id="H5N9bOrVLjfOTNpCXPXSBf" Location="VL.Skia" Version="2024.6.6" />
+  <DocumentDependency Id="KWegUrUZwvQN2RuL3lfe4z" Location="../../VL.Rhino.3dm.vl" IsForward="true" />
+  <NugetDependency Id="SQA2o7ybXUyLVHoHrkQMrQ" Location="VL.Stride.Runtime" Version="2024.6.6" />
+  <NugetDependency Id="Gk21lcHxpi8PhB6zNAPJuH" Location="VL.Stride.Windows" Version="2024.6.6" />
+  <NugetDependency Id="GhfZWYrwYoNPQMVnhPNR1L" Location="Rhino3dm" Version="8.9.0" />
+</Document>
