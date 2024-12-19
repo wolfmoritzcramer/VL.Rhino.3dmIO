@@ -46,11 +46,11 @@
             <Pin Id="HCL9oGOsT4nNgabMeKNrwh" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Kf3Z2AUBHQZNM5O9vien3C" Name="GeometryBase" Kind="InputPin" />
             <Pin Id="AI2z34LsiqCLEoCMjttqtZ" Name="File Path" Kind="InputPin" />
-            <Pin Id="St81BWiV5YfMb5vMaAfgkK" Name="Error Log" Kind="OutputPin" />
             <Pin Id="R0INzEJcSjcMXc5d3kbWAO" Name="Write" Kind="InputPin" />
+            <Pin Id="St81BWiV5YfMb5vMaAfgkK" Name="Error Log" Kind="OutputPin" />
             <Pin Id="LvPxLqtP2trQS8lE4JJIXz" Name="Success" Kind="OutputPin" />
           </Node>
-          <Pad Id="AapaxT0uxPzNAMrM23U4nb" Comment="File Path" Bounds="39,90,277,15" ShowValueBox="true" isIOBox="true" Value="..\Test.3dm">
+          <Pad Id="AapaxT0uxPzNAMrM23U4nb" Comment="File Path" Bounds="39,90,277,15" ShowValueBox="true" isIOBox="true" Value="">
             <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
@@ -108,7 +108,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="OG7B2tCdKnWP0mF2aVmnI6" Comment="Scale" Bounds="48,-243,35,43" ShowValueBox="true" isIOBox="true" Value="1, 1, 1">
+          <Pad Id="OG7B2tCdKnWP0mF2aVmnI6" Comment="Scale" Bounds="48,-243,35,43" ShowValueBox="true" isIOBox="true" Value="100, 100, 100">
             <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
@@ -131,13 +131,13 @@
         <Link Id="I8VnPAy7UWWLMaSl5EiGm9" Ids="LvPxLqtP2trQS8lE4JJIXz,C9cl5RmgdkdPdpcnz4bcYh" />
         <Link Id="U9rFgjO1cShNGewelmIJQb" Ids="CZ0weg7hKIIMlyiaF2671e,HvZEpVgfQaZOrBekZEc8A0" />
         <Link Id="IjRVmLIYiirNMmbdgU6pf2" Ids="ElOYWjOVIgMLBIjByoESGd,ACI8y2AKgeTNYWD4wnyz84" />
-        <Link Id="KzHkOu669DNNgHbhAVtSun" Ids="PPEhXqLYLuBNmq1I19B0DF,Kf3Z2AUBHQZNM5O9vien3C" />
         <Link Id="Pxba3WzzfyYNEtixs0GOQa" Ids="LyRbvP642VaLt8yMZhaQg8,ShvO9NDPrA8PpGmZUKaevk" />
         <Link Id="PBNgbWOklg6QX50pbNte1s" Ids="Pjl8J3fGEIpP3WpeZBbDet,QG2DwRQupPSPmSGcXmkKS6" />
         <Link Id="Ud4OiLHunCKNy9vOGDI68V" Ids="Julf3rnTgtmNtejUyWHB7n,MU58QzxHKK9O4QvFgu1hoo" />
         <Link Id="C5nnyZ7IanbOGlUSRVe9Dx" Ids="OG7B2tCdKnWP0mF2aVmnI6,Csc4H8FlEgONJQ0xz2UNO8" />
         <Link Id="PUmr5MZzSTuNRbIK0mWtud" Ids="MbsBEA8pQZDM4UAhOsavFD,OjpfxqEykW7NNgtCy6YfIX" />
         <Link Id="CqK5RSqInLpPtEwdP41Ndt" Ids="Krf7cmEY0JQPIV0oQw9dvy,PyvYt0eSZPwPcij0ZGmVZ6" />
+        <Link Id="RlgLzrnTo5dOqkMmxK0MVl" Ids="PPEhXqLYLuBNmq1I19B0DF,Kf3Z2AUBHQZNM5O9vien3C" />
       </Patch>
     </Node>
   </Patch>
